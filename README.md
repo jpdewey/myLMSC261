@@ -1,5 +1,3 @@
-## MARKDOWN OUTLINE
-Utilizing cheat sheets from git hub
 ## myLMSC261
 
 ## Notes
