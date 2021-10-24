@@ -7,7 +7,9 @@
 - Tried a code that created a bunch of lines of groups based on the number, staggering them at different placements, and utilized tabs instead of spacing, creating a very spread out pyramid.
 - Tried a code that utilized nestled loops to create the spread out pyramid followed by lines of the number '5,' since a number was used in the looping lines instead of a variable.
 Then, after these atrocities, I started to actually think about the code more seriously, and ended up with a loop of multiple pyramids. I was able to successfully create the pyramid, but it would repeat many times (seemingly) random.
+
 Following this, it was easy to determine that the issue was too many loops, so I eliminated one of my nestled loops, allowing the pyramid to only print correctly once. I then tested the code with multiple different number values to represent the 'stack,' ultimately determining that my code was sound. I then tested the code in bash, and everything worked out perfectly.
+
 Does this assignment require nestled loops? I am curious to see other solutions that utilize a different path than mine, as I struggled to come up with the most efficient solution, I'm sure there are many. 
 
 ### Additional troubleshooting
