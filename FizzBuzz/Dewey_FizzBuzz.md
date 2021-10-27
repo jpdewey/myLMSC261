@@ -12,6 +12,7 @@ Every integer that is divisible by both prints FizzBuzz
     If {variable} % 5 == 0, print "buzz"
     If {variable} % 3 == 0 and {variable} % 5 == 0, print "FizzBuzz"
     Else: print() (?)
+
 ## Trial and error
 - The first code tried resulted in stack overflow:
 
@@ -361,3 +362,9 @@ fizzbuzz(1)
 This was successful!!!!
 
 I then transferred this from the testing shell to a new .py file and tested it in terminal, which resulted in success!
+
+### Other Troubleshooting
+
+In addition to all of the above troubleshooting, there were additional issues regarding syntax: small typos, forgetting colons, etc.
+
+Luckily, the more I practice, the fewer syntax errors I find myself making!
