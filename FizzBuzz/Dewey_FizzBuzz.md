@@ -1,4 +1,4 @@
-# Initial Markdown for FizzBuzz homework
+# FizzBuzz Markdown
 
 ## Pseudocode (created in class 10-25):
 Counter counting every integer from 1 to 100
