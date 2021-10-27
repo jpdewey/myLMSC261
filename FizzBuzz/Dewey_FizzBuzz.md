@@ -14,7 +14,7 @@ Every integer that is divisible by both prints FizzBuzz
     Else: print() (?)
 
 ## Trial and error
-- The first code tried resulted in stack overflow:
+The first code tried resulted in stack overflow:
 
 def func(count):
 	for i in range(count + 1):
@@ -30,6 +30,7 @@ def func(count):
 			else: print(count)
 ///
 func(1) - this is what I believe resulted in stack overflow
+
 
 def func(count):
 	for i in range(count + 1):
@@ -48,7 +49,9 @@ func(count)
 
 This also didn't work since the counter is not running
 
-Then, I tried to create a code by first establishing a counter, then defining the if/else statements required to run the fizzbuzz
+
+Then, I tried to create a code by first establishing a counter, then defining the if/else statements required to run the fizzbuzz:
+
 def func(count):
 	count = 0
 	for i in range(count + 1):
