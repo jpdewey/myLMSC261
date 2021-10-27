@@ -254,3 +254,110 @@ def fizzbuzz(count):
 				print("fizzbuzz")
 ///
 fizzbuzz(1)
+
+This resulted in printing the number one, and then running invisible code that I had to terminate
+
+def fizzbuzz(count):
+	while count >= 1 and count <= 100:
+		for i in range(0,100):
+			print(f"{count + i}")
+		if count % 3 == 0:
+			print("fizz")
+		elif count % 5 == 0:
+			print("buzz")
+		elif count % 3 == 0 and count % 5 == 0:
+			print("fizzbuzz")
+///
+fizzbuzz(1)
+
+This resulted in an endless stream of repeated counting from 1 to 100
+
+My next attempt involved moving some things around to hopefully add the fizzes and buzzes in, but to no avail:
+def fizzbuzz(count):
+	while count >= 1 and count <= 100:
+		for i in range(0,100):
+			if count % 3 == 0:
+				print("fizz")
+			elif count % 5 == 0:
+				print("buzz")
+			elif count % 3 == 0 and count % 5 == 0:
+				print("fizzbuzz")
+			else:
+				print(f"{count + i}")
+///
+fizzbuzz(1)
+
+My next thought was to try changing the phrase "if count % 3 == 0" to "if i % 3 == 0" since I was getting a perfect counter without any fizz or buzz replacements. I thought this because I realized the variable count did not actually pertain to the numbers (I think), whereas i actually references the numbers. I also added parentheses to ensure that they were each being read as separate equations. Here is the code I came up with:
+
+def fizzbuzz(count):
+	if count >= 1 and count <= 100:
+		for i in range(0,100):
+			if (i % 3 == 0):
+				print("fizz")
+			elif (i % 5 == 0):
+				print("buzz")
+			elif (i % 3 == 0) and (i % 5 == 0):
+				print("fizzbuzz")
+			else:
+				print(f"{count + i}")
+///
+fizzbuzz(1)
+
+This resulted in the fizzes and buzzes being printed after the number they are pertaining to, without any fizzbuzzes
+
+Next, I changed the order of the if/else statements in order to narrow it down in a more efficient manner. This resulted in fizzes, buzzes and fizzbuzzes, but they were still 1 ahead of where they should be:
+
+def fizzbuzz(count):
+	if count >= 1 and count <= 100:
+		for i in range(0,100):
+			if (i % 3 == 0) and (i % 5 == 0):
+				print("fizzbuzz")
+			elif (i % 3 == 0):
+				print("fizz")
+			elif (i % 5 == 0):
+				print("buzz")
+			else:
+				print(f"{count + i}")
+///
+fizzbuzz(1)
+
+I tried changing the order of the print and the if statement (which I was pretty sure wasn't going to work, but I had to give it a shot), and ended up with a syntax error:
+
+def fizzbuzz(count):
+	if count >= 1 and count <= 100:
+		for i in range(0,100):
+			print("fizzbuzz") if (i % 3 == 0) and (i % 5 == 0)
+
+I tried changing the if/else statement to a while statement (which I also didn't think would work, but tried anyway), which resulted in endless fizzbuzzes:
+
+def fizzbuzz(count):
+	if count >= 1 and count <= 100:
+		for i in range(0,100):
+			while (i % 3 == 0) and (i % 5 == 0):
+				print("fizzbuzz")
+			while (i % 3 == 0):
+				print("fizz")
+			while (i % 5 == 0):
+				print("buzz")
+///
+fizzbuzz(1)
+
+Then, I added another formula within each if/else statement so that it prints the fizzes and buzzes on the numbers they are supposed to be replacing:
+
+def fizzbuzz(count):
+	if count >= 1 and count <= 100:
+		for i in range(0,100):
+			if ((i + 1) % 3 == 0) and ((i + 1) % 5 == 0):
+				print("fizzbuzz")
+			elif ((i + 1) % 3 == 0):
+				print("fizz")
+			elif ((i + 1) % 5 == 0):
+				print("buzz")
+			else:
+				print(f"{count + i}")
+///
+fizzbuzz(1)
+
+This was successful!!!!
+
+I then transferred this from the testing shell to a new .py file and tested it in terminal, which resulted in success!
