@@ -91,3 +91,43 @@ Traceback (most recent call last):
 TypeError: cannot unpack non-iterable NoneType object
 
 ```
+I thought that the issue may have stemmed from the place where python was calling the .aiff file from, so I adjusted the fourth line to include "/Assignment-pyo" but I forgot to re-route it to "jdewey." This was the result:
+```
+= RESTART: /Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py
+
+WxPython is not found for the current python version.
+Pyo will use a minimal GUI toolkit written with Tkinter (if available).
+This toolkit has limited functionnalities and is no more
+maintained or updated. If you want to use all of pyo's
+GUI features, you should install WxPython, available here:
+http://www.wxpython.org/
+
+Pyo warning: Portaudio input device `MacBook Pro Microphone` has fewer channels (1) than requested (2).
+Traceback (most recent call last):
+  File "/Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py", line 4, in <module>
+    snd = SndTable("/Users/rrome/Documents/GitHub/lmsc261sp21/110Debugging/Assignment-Pyo/dulcimer.aiff")
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyo-1.0.4-py3.9-macosx-10.9-x86_64.egg/pyo/lib/tables.py", line 1650, in __init__
+    _size, _dur, _snd_sr, _snd_chnls, _format, _type = sndinfo(p)
+TypeError: cannot unpack non-iterable NoneType object
+>>>
+```
+I then tried readjusting all the bounds to include the correct file location.
+The result was the same:
+```
+= RESTART: /Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py
+
+WxPython is not found for the current python version.
+Pyo will use a minimal GUI toolkit written with Tkinter (if available).
+This toolkit has limited functionnalities and is no more
+maintained or updated. If you want to use all of pyo's
+GUI features, you should install WxPython, available here:
+http://www.wxpython.org/
+
+Pyo warning: Portaudio input device `MacBook Pro Microphone` has fewer channels (1) than requested (2).
+Traceback (most recent call last):
+  File "/Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py", line 4, in <module>
+    snd = SndTable("/Users/jdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimer.aiff")
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyo-1.0.4-py3.9-macosx-10.9-x86_64.egg/pyo/lib/tables.py", line 1650, in __init__
+    _size, _dur, _snd_sr, _snd_chnls, _format, _type = sndinfo(p)
+TypeError: cannot unpack non-iterable NoneType object
+```
