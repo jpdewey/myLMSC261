@@ -66,9 +66,10 @@ Next I will try reopening IDLE, since maybe IDE's run like DAW's where they need
 
 This failed again, with the exact same error as before
 
-After a brief conversation with Rachel, I found my pyo, in the josephdewey user (which is where it should be?)
+After a brief conversation with Rachel, I found my pyo in the josephdewey user (which is where it should be?)
 
 Then Rachel came to assist and ran the melodies file directly from the .py file, not from the copied code in github.
+- This was successful!!
 
 I then attempted to run the dulcimerplayer file, but to no avail, with the following error message:
 ```
