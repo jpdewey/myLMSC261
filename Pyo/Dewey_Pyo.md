@@ -131,3 +131,50 @@ Traceback (most recent call last):
     _size, _dur, _snd_sr, _snd_chnls, _format, _type = sndinfo(p)
 TypeError: cannot unpack non-iterable NoneType object
 ```
+After pondering for a few days, I decided to try to combine the two codes, instead of trying to run 'dulcimerplayer' separately, since that was not working
+
+This was clearly a terrible idea, since it caused Python to immediately crash and send back dozens of error messages:
+```
+= RESTART: /Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py
+
+WxPython is not found for the current python version.
+Pyo will use a minimal GUI toolkit written with Tkinter (if available).
+This toolkit has limited functionnalities and is no more
+maintained or updated. If you want to use all of pyo's
+GUI features, you should install WxPython, available here:
+http://www.wxpython.org/
+
+Traceback (most recent call last):
+  File "/Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimerplayer.py", line 4, in <module>
+    snd = SndTable("/Users/rrome/Documents/GitHub/lmsc261sp21/110Debugging/dulcimer.aiff")
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pyo-1.0.4-py3.9-macosx-10.9-x86_64.egg/pyo/lib/tables.py", line 1650, in __init__
+    _size, _dur, _snd_sr, _snd_chnls, _format, _type = sndinfo(p)
+TypeError: cannot unpack non-iterable NoneType object
+>>>
+= RESTART: /Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/melodies.py
+
+WxPython is not found for the current python version.
+Pyo will use a minimal GUI toolkit written with Tkinter (if available).
+This toolkit has limited functionnalities and is no more
+maintained or updated. If you want to use all of pyo's
+GUI features, you should install WxPython, available here:
+http://www.wxpython.org/
+
+Pyo warning: Portmidi warning: could not open midi input 0 (Vienna Instruments MIDI): PortMidi: `Invalid device ID'
+Pyo warning: Portmidi closed.
+
+================================ RESTART: Shell ================================
+```
+Looking back at my code, I realized I may have entered my username in incorrectly, so I tried adjusting one small line of code again:
+```
+from pyo import *
+s = Server().boot()
+s.start()
+snd = SndTable("/Users/josephdewey/Documents/GitHub/lmsc261fa21/110Debugging/Assignment-Pyo/dulcimer.aiff")
+env = HannTable()
+pos = Phasor(freq=snd.getRate()*.25, mul=snd.getSize())
+dur = Noise(mul=.001, add=.1)
+g = Granulator(snd, env, [1, 1.001], pos, dur, 32, mul=.1).out()
+
+```
+This code WORKED!!! The granulator function created a spacey effect on the guitar from dulcimerplayer.aiff. I am very happy with this success.
