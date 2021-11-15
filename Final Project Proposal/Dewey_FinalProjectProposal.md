@@ -7,13 +7,13 @@ This project will be a professional-level website that showcases myself as a mus
 This project solves the problem of not being able to easily communicate and display works that I have done. This would serve as a virtual resumé, easily accessible for employers and potential clients to see and listen to an overview of my music. Currently, I have no easy way of giving examples of my music.
 ## 3.	Resources
 Musician Websites I like (more to come):
-[Joe Carrier](http://www.joecarrier.net/)
-[Thomas Michaels](http://www.thomasjmichaels.com/index.html)
+- [Joe Carrier](http://www.joecarrier.net/)
+- [Thomas Michaels](http://www.thomasjmichaels.com/index.html)
 Code:
-Code sharing from Thomas Michaels (my roommate and owner of the second site above)
-[This website has a useful beginner’s guide](https://websitesetup.org/website-coding-html-css/)
-[This is another website that has a useful beginner’s guide](https://www.w3schools.com/howto/howto_website.asp)
-[This is a source of HTML templates (similar to python modules?)](https://html.com/resources/free-html-templates/)
+- Code sharing from Thomas Michaels (my roommate and owner of the second site above)
+- [This website has a useful beginner’s guide](https://websitesetup.org/website-coding-html-css/)
+- [This is another website that has a useful beginner’s guide](https://www.w3schools.com/howto/howto_website.asp)
+- [This is a source of HTML templates (similar to python modules?)](https://html.com/resources/free-html-templates/)
 ## 4.	Use Cases
 My audience will be potential employers and clients in order to provide a resource to market myself and share my music.
 ## 5.	Timeline
