@@ -17,12 +17,12 @@ Code sharing from Thomas Michaels (my roommate and owner of the second site abov
 ## 4.	Use Cases
 My audience will be potential employers and clients in order to provide a resource to market myself and share my music.
 ## 5.	Timeline
-a.	Week 9: Project proposal
-b.	Week 10: Gather further resources and code based on meeting with Rachel, download required software, research hosting a website
-c.	Week 11: Outline basic website structure in code (different pages, headings, font, backgrounds, etc.)
-d.	Week 12: Begin inserting text information into different web pages (bio, contact information, etc.), clean up aesthetics/color schemes
-e.	Week 13: Begin inserting videos and audio links for easy displays of musicality, insert a direct messaging contact feature that links to professional email address
-f.	Week 14: Clean up all aesthetics, troubleshoot any issues from previous weeks that may still be present, finish up any remaining work
-g.	Week 15: Turn in final product
+- Week 9: Project proposal
+- Week 10: Gather further resources and code based on meeting with Rachel, download required software, research hosting a website
+- Week 11: Outline basic website structure in code (different pages, headings, font, backgrounds, etc.)
+- Week 12: Begin inserting text information into different web pages (bio, contact information, etc.), clean up aesthetics/color schemes
+- Week 13: Begin inserting videos and audio links for easy displays of musicality, insert a direct messaging contact feature that links to professional email address
+- Week 14: Clean up all aesthetics, troubleshoot any issues from previous weeks that may still be present, finish up any remaining work
+- Week 15: Turn in final product
 ## 6.	Assessment
 I think assessment should be based on how well the website works, as well as how clear and professional the website appears. Professionalism and ease of use are key in order to keep users engaged while viewing the website, so these are also important elements to the website. Additionally, the code running correctly and all aspects of the website working efficiently are important aspects that should also be assessed.
