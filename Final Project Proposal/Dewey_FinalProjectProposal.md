@@ -35,3 +35,6 @@ My audience will be potential employers and clients in order to provide a resour
 
 ## 6.	Assessment
 I think assessment should be based on how well the website works, as well as how clear and professional the website appears. Professionalism and ease of use are key in order to keep users engaged while viewing the website, so these are also important elements to the website. Additionally, the code running correctly and all aspects of the website working efficiently are important aspects that should also be assessed.
+
+Have a working site by the week after Thanksgiving. Figure out the hosting first then make the site look better.
+Github doesn't allow for forms 
