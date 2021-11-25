@@ -82,4 +82,5 @@
     </body>
     </html>
     ```
-    This looked boring, but without any glitches or issues 
+    This looked boring, but without any glitches or issues
+- The next step is to add some more content, and then begin the process and investigation of hosting the website
