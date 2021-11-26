@@ -85,3 +85,43 @@
     This looked boring, but without any glitches or issues
 - The next step is to add some more content, and then begin the process and investigation of hosting the website
 - Regarding the css template I downloaded, code for the form, buttons, and formatting is available in provided html files, as well as the css file, so I may utilize some of this, stay tuned!
+- I began to more deeply investigate the css file in order to create more interesting connections, since the mere css connection dictated at the top of the html file was not enough
+- While viewing the css file, I became confused about some aspects of the code, such as:
+```
+#banner {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  cursor: default;
+  height: 100vh;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+```
+  - Additionally, I tried using the .align-center to center some of my text like this:
+  ```
+  <h1 class=".align-center">
+    JP Dewey Music
+  </h1 class=".align-center">
+  <h3 class=".align-center">
+    <i>Producer, Arranger, Composer, Keyboardist, Songwriter</i>
+  </h3 class=".align-center">
+  <h2 class=".align-center">Home</h3 class=".align-center">
+  <br>
+  <img src="Pianoimage1.JPG">
+</div>
+<br>
+  ```
+  But this didn't work the way I had intended, prompting me to...
