@@ -5,6 +5,7 @@
 
 ## Process
 ### Steps
+#### Code Creation
 - First, I established an html file called index.html, and began to create an outline of my html code
   - This involved beginning with the standard
   ``` <!DOCTYPE html>
@@ -124,4 +125,46 @@
 </div>
 <br>
   ```
-  But this didn't work the way I had intended, prompting me to...
+  But this didn't work the way I had intended, prompting me to investigate the sample website provided in the css template, and utilizing the code from that index.html file, I tried connecting it into my own website.
+
+  I first copied this code for the beginning header feature:
+  ```
+  <head>
+  	<title>Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+  	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+
+  ```
+I then took out some of the redundant code, including the link to the main.css file, the ``` <meta name="viewport">``` section, and the ``` <meta charset="utf-8" /> ``` since these were pieces of code that I already had
+- Then I tested this to see if it worked similar to the sample Website
+- I then realized I had merely copied the main head, not the header I was attempting to, so I copied a different set of code:
+```
+<header id="header" class="alt">
+  <h1><a href="index.html">Spectral</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">Generic</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+```
+I then tweaked some of these elements in order to relate it to my own Website
+This ended up creating a side menu function that I hadn't intended on incorporating, and left the rest of the html file I had created as ugly as it was previously. I decided to read the entire reference html file before continuing to modify my code.
+#### Hosting
+- During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
+- I utilized my roommate Thomas to figure this section out, with a conversation looking something like this:
+  "Thomas, where did you host your website for Rachael's class?" "Well, I actually hosted it on github during her class, but I ended up hosting it on this server called Digital Ocean" 
