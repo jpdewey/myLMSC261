@@ -167,4 +167,9 @@ This ended up creating a side menu function that I hadn't intended on incorporat
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
 - I utilized my roommate Thomas to figure this section out, with a conversation looking something like this:
-  "Thomas, where did you host your website for Rachael's class?" "Well, I actually hosted it on github during her class, but I ended up hosting it on this server called Digital Ocean" 
+  "Thomas, where did you host your website for Rachael's class?" "Well, I actually hosted it on github during her class, but I ended up hosting it on this server called Digital Ocean"
+Upon investigating Digital Ocean, a source that Thomas appreciates, I realized that I would also need to register my domain name with a common domain registrar.
+I then googled domain registrars, finding register.com, google, and namecheap.com (the one that Thomas uses). Based solely on price, Google costs $7/year, namecheap is $5.98, and register.com is $5 for the first year, but suspiciously doesn't give an easy way to find the cost.
+  Since Thomas trusts namecheap, and I don't need a service to host the website if I use Digital Ocean, I decided to continue with namecheap and Digital Ocean. Additionally, this allows me to bounce issues and ideas back and forth with Thomas in perpetuity.
+- I successfully registered a domain with the name jpdeweymusic.com with namecheap. I then registered for Digital Ocean, and just need to deploy the website via digital ocean, and hosting should be all set.
+  I did run into some confusion, since it says that in order to deploy your website, I need to choose whether to deploy as a wordpress server, magneto server, cPanel server, Ghost server, Ubuntu server, or the source code on another app platform. This will require further research to ensure I do not mess anything up in this process. 
