@@ -165,6 +165,14 @@ I then took out some of the redundant code, including the link to the main.css f
 I then tweaked some of these elements in order to relate it to my own Website
 This ended up creating a side menu function that I hadn't intended on incorporating, and left the rest of the html file I had created as ugly as it was previously. I decided to read the entire reference html file before continuing to modify my code.
 - While reading the html file example, I noticed that the class "inner" and applied that to parts of my code that I wanted to be in the center of the page after the code ``` class=".aligncenter" ``` didn't work.
+- I then realized what the example html file was referencing within the css file, recalling from class how the ``` <div>``` code separates things for the css file, and realized I needed to use the same syntax as the example html file in order to properly call the css file. Therefore, I copied this code:
+  ```
+  <section id="banner">
+    <div class="inner">
+      <h2>Spectral</h2>
+      ```
+      And added the necessary endings and changed "Spectral" to "JP Dewey Music" and checked to see if this replicated the example website, which it did! (to an extent, still not as fancy)
+        - This is a large breakthrough, as I now know how to properly link to the more complex css file using code examples from the example html file. This feels like cheating, so I will ask Rachel about whether this is cheating or not. 
 
 
 #### Hosting
