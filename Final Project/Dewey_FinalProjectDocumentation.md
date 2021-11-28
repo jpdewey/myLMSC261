@@ -164,6 +164,7 @@ I then took out some of the redundant code, including the link to the main.css f
 ```
 I then tweaked some of these elements in order to relate it to my own Website
 This ended up creating a side menu function that I hadn't intended on incorporating, and left the rest of the html file I had created as ugly as it was previously. I decided to read the entire reference html file before continuing to modify my code.
+
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
 - I utilized my roommate Thomas to figure this section out, with a conversation looking something like this:
@@ -172,4 +173,6 @@ Upon investigating Digital Ocean, a source that Thomas appreciates, I realized t
 I then googled domain registrars, finding register.com, google, and namecheap.com (the one that Thomas uses). Based solely on price, Google costs $7/year, namecheap is $5.98, and register.com is $5 for the first year, but suspiciously doesn't give an easy way to find the cost.
   Since Thomas trusts namecheap, and I don't need a service to host the website if I use Digital Ocean, I decided to continue with namecheap and Digital Ocean. Additionally, this allows me to bounce issues and ideas back and forth with Thomas in perpetuity.
 - I successfully registered a domain with the name jpdeweymusic.com with namecheap. I then registered for Digital Ocean, and just need to deploy the website via digital ocean, and hosting should be all set.
-  I did run into some confusion, since it says that in order to deploy your website, I need to choose whether to deploy as a wordpress server, magneto server, cPanel server, Ghost server, Ubuntu server, or the source code on another app platform. This will require further research to ensure I do not mess anything up in this process. 
+  I did run into some confusion, since it says that in order to deploy your website, I need to choose whether to deploy as a wordpress server, magneto server, cPanel server, Ghost server, Ubuntu server, or the source code on another app platform. This will require further research to ensure I do not mess anything up in this process.
+- After sending the DNS to Digital ocean from namecheap, I decided to consult my trusty resource and roommate, Thomas, for more information regarding the next hosting steps.
+  This discussion resulted in him realizing that Digital Ocean is different than it was when he did it, prompting me to have to do individual research. He recommended launching as an "Ubuntu server," since that utilizes the same operating system as the os his website runs on, Divian.
