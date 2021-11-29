@@ -172,7 +172,100 @@ This ended up creating a side menu function that I hadn't intended on incorporat
       <h2>Spectral</h2>
       ```
       And added the necessary endings and changed "Spectral" to "JP Dewey Music" and checked to see if this replicated the example website, which it did! (to an extent, still not as fancy)
-        - This is a large breakthrough, as I now know how to properly link to the more complex css file using code examples from the example html file. This feels like cheating, so I will ask Rachel about whether this is cheating or not. 
+        - This is a large breakthrough, as I now know how to properly link to the more complex css file using code examples from the example html file. This feels like cheating, so I will ask Rachel about whether this is cheating or not.
+- After this breakthrough, I decided to fill in the rest of the information before carrying on with the css file, figuring that it would be easier to format after everything had been filled out.
+- I then inserted a table using this code from the elements.html file that was included, modifying the table slightly to fit my needs:
+```
+<section>
+  <h4>Table</h4>
+  <h5>Default</h5>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Item One</td>
+          <td>Ante turpis integer aliquet porttitor.</td>
+          <td>29.99</td>
+        </tr>
+        <tr>
+          <td>Item Two</td>
+          <td>Vis ac commodo adipiscing arcu aliquet.</td>
+          <td>19.99</td>
+        </tr>
+        <tr>
+          <td>Item Three</td>
+          <td> Morbi faucibus arcu accumsan lorem.</td>
+          <td>29.99</td>
+        </tr>
+        <tr>
+          <td>Item Four</td>
+          <td>Vitae integer tempus condimentum.</td>
+          <td>19.99</td>
+        </tr>
+        <tr>
+          <td>Item Five</td>
+          <td>Ante turpis integer aliquet porttitor.</td>
+          <td>29.99</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"></td>
+          <td>100.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+```
+I made changes so that the initial table looked like this:
+```
+<div>
+  <h2>Resumé</h2>
+    <br>
+    <section>
+      <h4>Resumé</h4>
+      <h5>Professional</h5>
+      <div class="table-wrapper">
+        <table> <!-- Table 1, Professional work experience -->
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Dates</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Junior Analyst at Hit Songs Deconstructed</td>
+              <td>Analyzed, drafted, and proofed data on Top 10 Hot 100 music; effectively utilizing database resources</td>
+              <td>Nov 2021 - Present</td>
+            </tr>
+            <tr>
+              <td>Admissions Student Recruiter and Tour Guide at Berklee College of Music</td>
+              <td>Engaged with prospective students and parents to encourage them to apply and enroll in the College</td>
+              <td>May 2021 - Present</td>
+            </tr>
+            <tr>
+              <td>WTD Studios Scheduling Assistand at Berklee College of Music</td>
+              <td> Engaged with the student body to successfully grant access to on campus studios through online reservation system</td>
+              <td>May 2021 - Present</td>
+            </tr>
+            <tr>
+              <td>Music Analysis Intern at Hit Songs Deconstructed</td>
+              <td>Analyzed, drafted, and proofed data and reports on Top 10 Hot 100 pop music; effectively utilizing database resources; successfully reserached for opportunities to grow the company's reach and influence in the music industry</td>
+              <td>May 2021 - Aug 2021</td>
+            </tr>
+          </tbody>
+        </table>
+```
+- I then repeated this for all sections of the resumé that I wanted to include on the website 
 
 
 #### Hosting
