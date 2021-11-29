@@ -265,7 +265,40 @@ I made changes so that the initial table looked like this:
           </tbody>
         </table>
 ```
-- I then repeated this for all sections of the resumé that I wanted to include on the website 
+- I then repeated this for all sections of the resumé that I wanted to include on the website
+- I noticed that the website was super spread out, so I looked into the css file and noticed the margins were 0, so I adjusted that in the main.css file and saved the file
+  - This moved everything in slightly, but upon trying to make things move in further, adjusting these bounds changed nothing.
+  - I consulted Thomas, and changed everything to fall into the subclass "main" which didn't work, then tried the class "major" which added lines under all the headers, which didn't help. I gave up on Thomas at this point
+  - I managed to get the page wrapped and look more professional, but lost my main header, which I found is due to not being linked as an animation in the javascript files, which I have to link. I found this by utilizing the css file, which had an important! note next to where this is function is called.
+- While working on other aspects of the code, I blew time by utilizing this code in order to create a better sub heading underneath the main title of the website:
+```
+<section id="one" class="wrapper style1 special">
+  <div class="inner">
+    <header class="major">
+      <h2>Arcu aliquet vel lobortis ata nisl<br />
+      eget augue amet aliquet nisl cep donec</h2>
+      <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+      fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+    </header>
+    <ul class="icons major">
+      <li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+      <li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+      <li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+    </ul>
+  </div>
+</section>
+```
+I altered it to become this code to fit my needs:
+```
+<section id="one" class="wrapper style1 special"> <!-- Sub title code -->
+  <div class="inner">
+    <header class="major">
+      <h2><i>Producer, Arranger, Composer, Keyboardist, Songwriter</i></h2>
+    </header>
+  </div>
+</section>
+```
+
 
 
 #### Hosting
