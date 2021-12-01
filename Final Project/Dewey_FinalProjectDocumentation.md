@@ -320,4 +320,18 @@ I then googled domain registrars, finding register.com, google, and namecheap.co
 - Through this, I installed Nginx on the server through sudo commands within the user I had established on the server (not through the root user)
 - After installing the Nginx server, I began the process of uploading my website files to the server
 - The following sources were referenced for how to get the html files to upload to the nginx server:
-  - 
+  - [This source](https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/)
+  - [Plus this source](https://futurestud.io/tutorials/nginx-how-to-serve-a-static-html-page)
+  - [And this source](https://www.nginx.com/resources/wiki/modules/upload/)
+  - [And this source](https://www.nginx.com/resources/wiki/start/)
+  - [And this source](https://www.nginx.com/resources/wiki/start/topics/examples/full/)
+  None of these sources ended up helping me find the code, with all of them resulting in error messages due to trying to use a different coding language that was provided in bash
+- The source that ended up helping was Thomas, who gave me this code for uploading files into nginx:
+```
+scp -r /Users/josephdewey/Final\ Project root@<ip address>:/var/www/html
+```
+- I tested this - it failed. The nginx confirmation message is gone, and there is nothing on the server. Even though there is nothing on the server, everything looks correctly from the terminal
+- I fixed it through Digital Ocean, the name for the domain was incorrect, so I fixed this to say "jpdeweymusic.com" instead of "www.jpdeweymusic.com" which is what it thought was the domain name
+- This rendered success, but none of the attached files were present on the internet, only the raw html file
+  I realized this could be due to the attached files being located in a separate folder on the server, so I decided to upload all of the files that are necessary for linking individually, and to take down the folder that was separate from the index.html file
+  I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website
