@@ -298,8 +298,27 @@ I altered it to become this code to fit my needs:
   </div>
 </section>
 ```
-
-
+- I then began the process of implementing different aspects of the html templates into my code, starting by establishing a better way of inserting my image for my "About" section, which involved copying a piece of code from the example that allowed the image to become indented:
+```
+<section>
+<h5>Left &amp; Right</h5>
+<p><span class="image left"><img src="images/pic04.jpg" alt="" /></span>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+</section>
+```
+The implementation:
+```
+<section>
+  <h2>About</h2>
+  <p><span class="image left"><img src="Pianoimage1.JPG" alt="" /></span>JP Dewey is a versatile producer, arranger, composer, keyboardist, and songwriter, with music spanning across a wide variety of genres and with work experience spanning across many facets of the music industry.
+  Originally from the Southerntier region of upstate New York, Dewey participated in numerous regional musical festivities while in high school, including the 2018 NYSSMA All-State Conference Festival as the Jazz Ensemble's Pianist, performing with the Central Winds Jazz Orchestra, performing with the Hartwick College Jazz Ensemble, and winning "Best Musician of the Festival" awards in Oneida, NY and Fonda, NY.
+  Following high school, Dewey went on to study at Berklee College of Music in Boston, MA, majoring in Contemporary Writing and Production with a minor in Writing for Television and New Media. While at Berklee, Dewey arranged for two large-scale concerts, produced and wrote with a multitude of artists across genres from pop, jazz, rock, and R&B, composed original music for picture and for release, and contributed dozens of arrangements to fellow students and organizations. Additionally, he performed in a number of difference facets, including for pop, latin pop, R&B, and neo-soul artists, singer-songwriter showcases, and musical theatre endeavors.
+  While at Berklee, Dewey also began working for the company Hit Songs Deconstructed, first as an intern, and then as an analyst.
+  Currently, JP Dewey is in the process of finishing his degree at Berklee, working part-time for Hit Songs Deconstructed, and freelance writing, producing, and arranging.</p>
+</section>
+```
+- It was at this point that I realized that dividing the website into separate, scrolling pages like the template dictated would probably be easier than trying to adapt the template into one, scrolling webpage.
+  - Despite this realization, I decided to continue trying to adapt the template to my vision before embarking on this extra amount of work
+- After a bit of difficulty, I managed to fix the fancy parts of the cover page by realizing my javascript links were referencing the wrong location, so upon re-linking it to the right location, I had homepage success!!
 
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
