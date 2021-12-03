@@ -319,6 +319,27 @@ The implementation:
 - It was at this point that I realized that dividing the website into separate, scrolling pages like the template dictated would probably be easier than trying to adapt the template into one, scrolling webpage.
   - Despite this realization, I decided to continue trying to adapt the template to my vision before embarking on this extra amount of work
 - After a bit of difficulty, I managed to fix the fancy parts of the cover page by realizing my javascript links were referencing the wrong location, so upon re-linking it to the right location, I had homepage success!!
+- I then created three new html files for each page: about.html, resume.html, and contact.html. I copied the main code wrappers from the index.html file, and then utilized the other page html files from the template for the different formatting based on the page. This allowed the pages to have a different feel from the main homepage. I then copied all of the necessary body information into each respective html page file, and linked the files to the main index.html file through the menu command in the header, which looks like this:
+```
+<header id="header" class="alt">
+  <h1><a href="index.html">JP Dewey Music</a></h1>
+  <nav id="nav">
+    <ul>
+      <li class="special">
+        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resumé</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+```
 
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
