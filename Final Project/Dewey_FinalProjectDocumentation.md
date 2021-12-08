@@ -374,4 +374,4 @@ scp -r /Users/josephdewey/Final\ Project root@<ip address>:/var/www/html
 - I fixed it through Digital Ocean, the name for the domain was incorrect, so I fixed this to say "jpdeweymusic.com" instead of "www.jpdeweymusic.com" which is what it thought was the domain name
 - This rendered success, but none of the attached files were present on the internet, only the raw html file
   I realized this could be due to the attached files being located in a separate folder on the server, so I decided to upload all of the files that are necessary for linking individually, and to take down the folder that was separate from the index.html file
-  I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website
+  I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website!
