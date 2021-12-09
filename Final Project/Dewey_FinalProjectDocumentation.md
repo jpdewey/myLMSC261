@@ -340,6 +340,8 @@ The implementation:
   </nav>
 </header>
 ```
+- I then worked out different bugs by comparing code between the example html files and the html files for each page. An example of this would be making sure the border worked across all pages, which I fixed by deleting the class section of the header function in the above code
+-
 
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
@@ -375,3 +377,4 @@ scp -r /Users/josephdewey/Final\ Project root@<ip address>:/var/www/html
 - This rendered success, but none of the attached files were present on the internet, only the raw html file
   I realized this could be due to the attached files being located in a separate folder on the server, so I decided to upload all of the files that are necessary for linking individually, and to take down the folder that was separate from the index.html file
   I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website!
+- Upon trying to upload an updated version with the css file, 
