@@ -379,4 +379,11 @@ scp -r /Users/josephdewey/Final\ Project root@<ip address>:/var/www/html
   I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website!
 - Upon trying to upload an updated version with the css file, the website was still not linking to the css. I tried re-uploading, triple checking the file path, double checking the configuration of the server, and making small insignificant tweaks to the file path to make sure it reflected the server
   - I then decided to consult Rachel in an office hour to double check and have a fresh set of eyes look at my code. She suggested changing one of the file names to not include any symbols
-  
+    - This unfortunately did not work. So, I decided to eliminate the amount of folders present.
+    - I started by moving all of the main files (the css files and the js files) into the same folder as the html files, so that there is not file path when referencing the files. I then went into each file and made sure that the "routing" was correct.
+    - I then deleted aspects of the template that were unnecessary and would take up excessive space, possibly inhibiting the efficiency of the server (these included readme files, example html files, etc.)
+    - I then went through and changed the paths of all of the images in the css file, since they were now in a new place
+    - I verified that I had done these steps correctly by checking with the locally opened html file and making sure all the previous aspects from the css files were present
+    - I then deleted all the files on my server and re-uploaded them
+- This worked!!! (sorta) The css files and js files were connected to the html file, so it displays correctly, but this led me to the conclusion that storing things in folders and then trying to reference those folders on a Debian server may not be 100% efficient or effective, since the images that I kept two layers of folders deeper than the other files were not appearing.
+- Since I was finally able to get a slightly more decent looking website hosted, I decided to finish up my css coding, then delete the images from the server and re-upload everything directly into the main html folder that is used for the Website
