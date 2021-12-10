@@ -377,4 +377,6 @@ scp -r /Users/josephdewey/Final\ Project root@<ip address>:/var/www/html
 - This rendered success, but none of the attached files were present on the internet, only the raw html file
   I realized this could be due to the attached files being located in a separate folder on the server, so I decided to upload all of the files that are necessary for linking individually, and to take down the folder that was separate from the index.html file
   I also decided that I would finish this portion of the website after the css coding was done, since I had successfully hosted the Website!
-- Upon trying to upload an updated version with the css file, 
+- Upon trying to upload an updated version with the css file, the website was still not linking to the css. I tried re-uploading, triple checking the file path, double checking the configuration of the server, and making small insignificant tweaks to the file path to make sure it reflected the server
+  - I then decided to consult Rachel in an office hour to double check and have a fresh set of eyes look at my code. She suggested changing one of the file names to not include any symbols
+  
