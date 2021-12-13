@@ -1,6 +1,6 @@
 # Final Project Documentation
 
-## Some Sources
+## Some Introductory Sources
 - [How To Build A Website by W3](https://www.w3schools.com/howto/howto_website.asp)
 
 ## Process
@@ -341,7 +341,8 @@ The implementation:
 </header>
 ```
 - I then worked out different bugs by comparing code between the example html files and the html files for each page. An example of this would be making sure the border worked across all pages, which I fixed by deleting the class section of the header function in the above code
--
+- After this, generally the css file was pretty easy to put together. I figured out how to change colorings, add new images, etc. by just replacing the files with files of the exact same name.
+- Despite the easy going of adding audio clips, images, and content, I had an issue with embedding the video files. At first I tried utilizing "video controls" as a coding dictation, which did not end up working. Then I consulted [this](https://www.computerhope.com/issues/ch000591.htm#imgtag)link to try to find a successful way of uploading the video. Ultimately, I ended up just uploading it to youtube privately and then embedding the link
 
 #### Hosting
 - During the process of creating my code, I had to figure out how to get the website hosted outside of github (it wasn't already on github, but the only process I am familiar with is github). As per Rachael's instructions, I went about figuring out how to host with an ugly html file
